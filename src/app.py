@@ -38,12 +38,12 @@ def preprocess_text(text):
 df['cleaned_text'] = df['text'].apply(preprocess_text)
 
 
-file_path=r"C:\DATA SCIENCE and ANALITICS\email spam\models\model.pkl"
+file_path=r"models/model.pkl"
 
 with open(file_path,"rb") as file:
     loaded_model=pickle.load(file)
 
-file_path=r"C:\DATA SCIENCE and ANALITICS\email spam\models\vectorizer.pkl"
+file_path=r"models/vectorizer.pkl"
 
 with open(file_path,"rb") as file:
     tfidf=pickle.load(file)
